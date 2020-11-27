@@ -47,3 +47,5 @@ A full example of a what our project could look like:
   </ItemGroup>
 </Project>
 ```
+
+If you are still struggling, you can take a look at the [example project]https://github.com/CptWesley/BackwardsCompatibleRecords/tree/master/src/BackwardsCompatibleRecords.Example).
