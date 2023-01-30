@@ -31,6 +31,8 @@ public static class Program
             CheckNotNull(person);
             Console.WriteLine($"{person.Name} - {GetMajorOrDepartment(person)}");
         }
+
+        HighlightRegex(@"0|-?[1-9][0-9]*");
     }
 
     private static string GetMajorOrDepartment(Person person)
@@ -52,12 +54,14 @@ public static class Program
     [SupportedOSPlatform("windows")]
     private static void HiFromWindows()
     {
-
     }
 
     [SupportedOSPlatform("linux")]
     private static void HiFromLinux()
     {
+    }
 
+    private static void HighlightRegex([StringSyntax(StringSyntaxAttribute.Regex)] string pattern)
+    {
     }
 }
