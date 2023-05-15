@@ -32,6 +32,8 @@ Meaning that users of your application or consumers of your library won't even k
 | [UnsupportedOSPlatformGuardAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.versioning.unsupportedosplatformguardattribute) | N/A | Part of static platform support analysis. |
 | ObsoletedInOSPlatformAttribute | N/A | Part of static platform support analysis. |
 | [StringSyntaxAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.stringsyntaxattribute) | N/A | Provides a hint to IDEs to provide specific syntax highlighting for string parameters. |
+| [required modifier](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required) | 11 | Enforces initialisation of properties with `init` during construction. |
+| [SetsRequiredMembersAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.setsrequiredmembersattribute) | N/A | Marks constructor as setting all `required` properties. |
 
 ## Where can I get it?
 [NuGet](https://www.nuget.org/packages/BackwardsCompatibleFeatures/)
@@ -44,12 +46,12 @@ Now the slightly more complex part... We are going to set change the asset setti
 
 We should change the package import which should look something like this:  
 ```xml
-<PackageReference Include="BackwardsCompatibleFeatures" Version="2.1.0" />
+<PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0" />
 ```
 
 To the following:
 ```xml
-<PackageReference Include="BackwardsCompatibleFeatures" Version="2.1.0">
+<PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0">
     <PrivateAssets>all</PrivateAssets>
     <IncludeAssets>compile</IncludeAssets>
 </PackageReference>
@@ -65,7 +67,7 @@ A full example of a what our project could look like:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BackwardsCompatibleFeatures" Version="2.1.0">
+    <PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>compile</IncludeAssets>
     </PackageReference>
