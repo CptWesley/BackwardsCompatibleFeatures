@@ -21,7 +21,7 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<CodeAnalysisRuleSet>../Ruleset.ruleset</CodeAnalysisRuleSet>
 		<DocumentationFile>bin/$(AssemblyName).xml</DocumentationFile>
-		<LangVersion>10</LangVersion>
+		<LangVersion>11</LangVersion>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 
 		<Authors>Wesley Baartman</Authors>
@@ -32,7 +32,7 @@
 		<PackageTags>records net5 isexternalinit backwards compatibility bcl record init</PackageTags>
 		<AssemblyVersion>$(Version)</AssemblyVersion>
 		<FileVersion>$(Version)</FileVersion>
-		<Version>2.1</Version>
+		<Version>2.2.0</Version>
 		<Copyright></Copyright>
 		<PackageIconUrl>https://raw.githubusercontent.com/CptWesley/BackwardsCompatibleRecords/master/logo.png</PackageIconUrl>
 		<PackageIcon>logo.png</PackageIcon>

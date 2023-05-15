@@ -33,6 +33,11 @@ public static class Program
         }
 
         HighlightRegex(@"0|-?[1-9][0-9]*");
+
+        Initialisers init = new Initialisers
+        {
+            Value = 42,
+        };
     }
 
     private static string GetMajorOrDepartment(Person person)
@@ -64,4 +69,9 @@ public static class Program
     private static void HighlightRegex([StringSyntax(StringSyntaxAttribute.Regex)] string pattern)
     {
     }
+}
+
+public class Initialisers
+{
+    public required int Value { get; init; }
 }
