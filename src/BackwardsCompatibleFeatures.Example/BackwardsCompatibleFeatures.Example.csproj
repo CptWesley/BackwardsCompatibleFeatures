@@ -4,11 +4,11 @@
 		<TargetFrameworks>
 			net47
 		</TargetFrameworks>
-		<LangVersion>10</LangVersion>
+		<LangVersion>11</LangVersion>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="BackwardsCompatibleFeatures" Version="2.1.0">
+		<PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>compile</IncludeAssets>
 		</PackageReference>
