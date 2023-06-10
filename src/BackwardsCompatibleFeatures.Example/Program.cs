@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.Runtime.Versioning;
 
@@ -35,6 +36,7 @@ public static class Program
         HighlightRegex(@"0|-?[1-9][0-9]*");
     }
 
+    [Pure]
     private static string GetMajorOrDepartment(Person person)
         => person switch
         {
