@@ -47,12 +47,12 @@ Now the slightly more complex part... We are going to set change the asset setti
 
 We should change the package import which should look something like this:  
 ```xml
-<PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0" />
+<PackageReference Include="BackwardsCompatibleFeatures" Version="2.3.0" />
 ```
 
 To the following:
 ```xml
-<PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0">
+<PackageReference Include="BackwardsCompatibleFeatures" Version="2.3.0">
     <PrivateAssets>all</PrivateAssets>
     <IncludeAssets>compile</IncludeAssets>
 </PackageReference>
@@ -68,7 +68,7 @@ A full example of a what our project could look like:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0">
+    <PackageReference Include="BackwardsCompatibleFeatures" Version="2.3.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>compile</IncludeAssets>
     </PackageReference>

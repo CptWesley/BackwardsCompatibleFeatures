@@ -8,7 +8,7 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="BackwardsCompatibleFeatures" Version="2.2.0">
+		<PackageReference Include="BackwardsCompatibleFeatures" Version="2.3.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>compile</IncludeAssets>
 		</PackageReference>
