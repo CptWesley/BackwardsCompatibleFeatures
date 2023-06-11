@@ -30,6 +30,7 @@
 			- Add support for `record` and `record struct`
 			### 2.0.0
 			- Rename project to BackwardsCompatibleFeatures
+			- Add support for `CallerArgumentExpressionAttribute`
 			- Add support for nullability analysis attributes
 			### 2.1.0
 			- Add support for `StringSyntaxAttribute`
