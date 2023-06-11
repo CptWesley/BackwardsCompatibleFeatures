@@ -8,6 +8,7 @@
 			netstandard2.1;
 			net30;
 			net40;
+			net45;
 			net46;
 			net47;
 			net48;
