@@ -6,6 +6,8 @@
 			netstandard1.6;
 			netstandard2.0;
 			netstandard2.1;
+			net30;
+			net40;
 			net46;
 			net47;
 			net48;
@@ -23,23 +25,40 @@
 		<DocumentationFile>bin/$(AssemblyName).xml</DocumentationFile>
 		<LangVersion>11</LangVersion>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-
+		<RelaseNotes>
+			### 1.0.0 (BackwardsCompatibleRecords)
+			- Add support for `record` and `record struct`
+			### 2.0.0
+			- Rename project to BackwardsCompatibleFeatures
+			- Add support for nullability analysis attributes
+			### 2.1.0
+			- Add support for `StringSyntaxAttribute`
+			### 2.2.0
+			- Add support for `required` keyword
+			### 2.3.0
+			- Add support for `PureAttribute`
+		</RelaseNotes>
+	</PropertyGroup>
+	
+	<PropertyGroup>
 		<Authors>Wesley Baartman</Authors>
 		<PackageProjectUrl>https://github.com/CptWesley/BackwardsCompatibleFeatures</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/CptWesley/BackwardsCompatibleFeatures</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Description>Simple compile-time dependency for allowing the use of modern C# features in older build targets.</Description>
-		<PackageTags>records net5 isexternalinit backwards compatibility bcl record init</PackageTags>
+		<PackageTags>records net5 isexternalinit backwards compatibility bcl record init required keyword keywords</PackageTags>
 		<AssemblyVersion>$(Version)</AssemblyVersion>
 		<FileVersion>$(Version)</FileVersion>
-		<Version>2.2.0</Version>
+		<Version>2.3.0</Version>
 		<Copyright></Copyright>
 		<PackageIconUrl>https://raw.githubusercontent.com/CptWesley/BackwardsCompatibleRecords/master/logo.png</PackageIconUrl>
 		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<None Include="../../logo.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="../../README.md" Pack="true" Visible="false" PackagePath="" />
 		<AdditionalFiles Include="../stylecop.json" Link="stylecop.json" />
 	</ItemGroup>
 

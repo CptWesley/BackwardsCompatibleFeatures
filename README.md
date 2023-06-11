@@ -34,6 +34,7 @@ Meaning that users of your application or consumers of your library won't even k
 | [StringSyntaxAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.stringsyntaxattribute) | N/A | Provides a hint to IDEs to provide specific syntax highlighting for string parameters. |
 | [required modifier](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required) | 11 | Enforces initialisation of properties with `init` during construction. |
 | [SetsRequiredMembersAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.setsrequiredmembersattribute) | N/A | Marks constructor as setting all `required` properties. |
+| [PureAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.contracts.pureattribute) | N/A | Marks method as pure (no observable side-effects). |
 
 ## Where can I get it?
 [NuGet](https://www.nuget.org/packages/BackwardsCompatibleFeatures/)
