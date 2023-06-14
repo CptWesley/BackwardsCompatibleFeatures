@@ -43,7 +43,7 @@ Meaning that users of your application or consumers of your library won't even k
 First we should add the [dependency](https://www.nuget.org/packages/BackwardsCompatibleFeatures/) to our project.
 Next up we should also add the `<LangVersion>10</LangVersion>` tag to the body of the `<PropertyGroup>...</PropertyGroup>` in our `.csproj` file.
 
-Now the slightly more complex part... We are going to set change the asset settings of the dependency to make sure consumers don't depend on this project.
+Now the slightly more complex part... We are going to change the asset settings of the dependency to make sure consumers don't depend on this project.
 
 We should change the package import which should look something like this:  
 ```xml
