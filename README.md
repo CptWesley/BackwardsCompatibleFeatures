@@ -1,3 +1,7 @@
+# DEPRECATION NOTICE
+Use [PolySharp](https://github.com/Sergio0694/PolySharp) instead.
+# DEPRECATION NOTICE
+
 [![NuGet](https://img.shields.io/nuget/v/BackwardsCompatibleFeatures.svg)](https://www.nuget.org/packages/BackwardsCompatibleFeatures/)  
 
 <img src="https://raw.githubusercontent.com/CptWesley/BackwardsCompatibleFeatures/master/logo.png" width="128" height="128">
